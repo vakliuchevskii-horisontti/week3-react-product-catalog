@@ -1,12 +1,21 @@
-import { UserDirectory } from "./components/UserDirectory";
-import { ProductCatalog } from "./components/ProductCatalog";
+import "./App.css";
+import { AppleBasket } from "./components/AppleBasket";
+import { AppleButton } from "./components/AppleButton";
+import { MovieList } from "./components/MovieList";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 py-10">
-      <UserDirectory />
-      <ProductCatalog />
-    </div>
+    <main className="app">
+      <section className="section">
+        <h1>Apple basket</h1>
+        <AppleButton />
+        <AppleBasket />
+      </section>
+
+      <section className="section">
+        <MovieList />
+      </section>
+    </main>
   );
 }
 
